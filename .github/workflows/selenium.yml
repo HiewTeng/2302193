@@ -39,4 +39,4 @@ jobs:
 
       - name: Run Selenium Tests
         working-directory: my-app
-        run: node ../tests/SeleniumTest.mjs github
+        run: node tests/SeleniumTest.mjs github
