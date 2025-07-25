@@ -28,6 +28,7 @@ export default [
       // Enable specific rules
       "security/detect-eval-with-expression": "error",
 
+      
       // Add recommended rules from security-node
       ...pluginSecurityNode.configs.recommended.rules,
 
