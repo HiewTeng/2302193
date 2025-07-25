@@ -31,12 +31,12 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
+        working-directory: my-app
         run: npm install
 
       - name: Wait for Selenium server to be ready
-        run: |
-          echo "Waiting for Selenium to be ready..."
-          sleep 15
+        run: sleep 15
 
       - name: Run Selenium Tests
-        run: node tests/SeleniumTest.mjs github
+        working-directory: my-app
+        run: node ../tests/SeleniumTest.mjs github
